@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<title>Presto HR</title>
+<link rel="shortcut icon" href="img/bis.ico" type="img/x-icon">
+<meta name="description" content="AppUI is a Bootstrap Admin Web App Template created by ebix and published on Themeforest">
+<meta name="author" content="ebix">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Related styles of various icon packs and plugins -->
+<link rel="stylesheet" href="css/plugins.css">
+<!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+<link rel="stylesheet" href="css/main.css">
+<!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+<!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/customize.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,400italic' rel='stylesheet' type='text/css'>
+<!-- END Stylesheets -->
+<!-- Modernizr (browser feature detection library) -->
+<script src="js/vendor/modernizr-2.8.3.js"></script>
+</head>
+<body>
+<!-- Page Wrapper -->
+<div id="page-wrapper" class="page-loading">
+  <div class="preloader">
+    <div class="inner">
+      <!-- Animation spinner for all modern browsers -->
+      <div class="preloader-spinner themed-background hidden-lt-ie10"></div>
+      <!-- Text for IE9 -->
+      <h3 class="text-primary visible-lt-ie10"><strong>Loading..</strong></h3>
+    </div>
+  </div>
+  
+  <div id="page-container" class="header-fixed-top sidebar-visible-lg-full">
+    <!-- Main Sidebar -->
+    <div id="sidebar">
+      <!-- Sidebar Brand -->
+      <div id="sidebar-brand" class="themed-background"> <a href="index.html" class="sidebar-title"></a> </div>
+      <!-- END Sidebar Brand -->
+      <!-- Wrapper for scrolling functionality -->
+      <div id="sidebar-scroll">
+        <!-- Sidebar Content -->
+        <div class="sidebar-content">
+          <!-- Sidebar Navigation -->
+          <ul class="sidebar-nav">
+            <li class="active"> <a href="#UserCredentials"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">User Credentials</span></a> </li>
+            <li> <a href="#MetaData"><i class="gi gi-vcard sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Meta Data</span></a> </li>
+            <li> <a href="#Countries"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Countries</span></a> </li>
+            <li> <a href="#JobPositions"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Job Positions</span></a> </li>
+            <li> <a href="#JobLocations"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Job Locations</span></a> </li>
+            <li> <a href="#SkillSets"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Skill Sets</span></a> </li>
+            <li> <a href="#CompensationPackage"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Compensation Package</span></a> </li>
+            <li> <a href="#PerksBenefits"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Perks/Benefits</span></a> </li>
+            <li> <a href="#WorkFlow"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Work Flow</span></a> </li>
+            <li> <a href="#Communication"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Communication</span></a> </li>
+            <li> <a href="#Requirements"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Requirements</span></a> </li>
+            <li> <a href="#Vendor"><i class="gi gi-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Vendor</span></a> </li>
+          </ul>
+          <!-- END Sidebar Navigation -->
+        </div>
+        <!-- END Sidebar Content -->
+      </div>
+      <!-- END Wrapper for scrolling functionality -->
+    </div>
+    <!-- END Main Sidebar -->
+    <!-- Main Container -->
+    <div id="main-container">
+      <!-- Header -->
+      <!-- In the PHP version you can set the following options from inc/config file -->
+      <header class="navbar navbar-glass navbar-default navbar-fixed-top">
+        <!-- Left Header Navigation -->
+        <ul class="nav navbar-nav-custom">
+          <!-- Main Sidebar Toggle Button -->
+          <li> <a href="javascript:void(0)" onClick="App.sidebar('toggle-sidebar');"> <i class="fa fa-ellipsis-v fa-fw animation-fadeInRight" id="sidebar-toggle-mini"></i> <i class="fa fa-bars fa-fw animation-fadeInRight" id="sidebar-toggle-full"></i> </a> </li>
+          <!-- END Main Sidebar Toggle Button -->
+        </ul>
+        <!-- END Left Header Navigation -->
+        <!-- Right Header Navigation -->
+        <ul class="nav navbar-nav-custom pull-right">
+          
+          <!-- END Alternative Sidebar Toggle Button -->
+          <!-- User Dropdown -->
+          <li class="dropdown header-userinfo"> <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><img src="img/thumb.jpg" width="38" height="38" alt="thumb"> John Smith <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-header"> <strong>ADMINISTRATOR</strong> </li>
+              <li> <a href="#"> <i class="fa fa-inbox fa-fw pull-right"></i> Inbox </a> </li>
+              <li> <a href="#"> <i class="fa fa-pencil-square fa-fw pull-right"></i> Profile </a> </li>
+              <li> <a href="#"> <i class="fa fa-picture-o fa-fw pull-right"></i> Media Manager </a> </li>
+              <li class="divider">
+              <li>
+              <li> <a href="javascript:void(0)" onClick="App.sidebar('toggle-sidebar-alt');"> <i class="gi gi-settings fa-fw pull-right"></i> Settings </a> </li>
+              <li> <a href="#"> <i class="gi gi-lock fa-fw pull-right"></i> Lock Account </a> </li>
+              <li> <a href="#"> <i class="fa fa-power-off fa-fw pull-right"></i> Log out </a> </li>
+            </ul>
+          </li>
+          <!-- END User Dropdown -->
+        </ul>
+        <!-- END Right Header Navigation -->
+      </header>
+      <!-- END Header -->
+      <!--SOF Page content -->
+      <div id="page-content">
+     <!-- Form Components Row -->
+        <div class="row">
+          <div class="col-md-10">
+            <!--SOF Form PersonalDetails Block -->
+            <div class="block"  id="UserCredentials">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>User Credentials</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal"> 
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>Name</label>
+                  <div class="col-md-8 form-inline-formate">
+                    <div class="col-xs-5 col-md-4">
+                      <input type="text" maxlength="25" id="fname" name="fname" class="form-control" value="" placeholder="">
+                      <span class="help-block">First</span> </div>
+                      <div class="col-xs-5 col-md-4">
+                      <input type="text" maxlength="25" id="lname" name="lname" class="form-control" value="" placeholder="">
+                      <span class="help-block">Last</span> </div>
+                    <div class="col-xs-2 col-md-1">
+                      <input type="text" maxlength="1" id="iname" name="iname" class="form-control" value="" placeholder="">
+                      <span class="help-block">MI</span> </div>
+                    
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Email Id</label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="jhon.doe@gmail.com" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">User Id </label>
+                  <div class="col-md-2">
+                    <input type="text" placeholder="User Id" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                <div class="form-group form-horizontal">
+                  <label for="example-text-input" class="col-md-3 control-label">Password </label>
+                  <div class="col-md-2">
+                    <input type="text" placeholder="Password" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Manager Name</label>
+                  <div class="col-md-6">
+                    <select id="manager" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+	<option value="Alabama">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Role</label>
+                  <div class="col-md-6">
+                    <select id="role" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+	<option value="Alabama">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District of Columbia</option>
+	<option value="FL">Florida</option>
+                    </select>
+                  </div>
+                </div>
+                 <!--<div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Manager Name</label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>-->
+                <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Contact Number</label>
+                   <!--<label for="example-text-input" class="col-md-3 control-label">User Id </label>-->
+                  <div class="col-md-2">
+                    <input type="text" placeholder="Number" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                    <div class="col-xs-2 col-md-1">
+                      <input type="text" maxlength="1" id="iname" name="iname" class="form-control" value="" placeholder="Extn">
+                </div>
+
+              </div>
+              <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Active</label>
+                   <!--<label for="example-text-input" class="col-md-3 control-label">User Id </label>-->
+                  <div class="col-md-2">
+                    <input type="checkbox">
+                  </div>
+              </div>
+               <div class="form-group">
+                  <div class="center-block" style="max-width:400px">
+                  <button id="userCredentialsSave" type="button" class="btn btn-success">SAVE</button>
+                  <button type="button" class="btn btn-success">CANCEL</button>
+
+                  </div>
+                </div>
+                <table id="userCredentialsTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>First Name</th>
+                       <th>Last Name</th>
+                      <th>Role</th>
+                      <th>Manager</th>
+                    </tr>
+                    <tr>
+                      <td>JOHN</td>
+                      <td>Doe</td>
+                      <td>HR</td>
+                      <td>MIKIL</td>
+                     
+                    </tr>
+                      <tr>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                  
+                    </tr>
+                     
+                    
+                  </table>
+
+              </div>
+              <!-- Form Content -->
+            </div>
+            <!--EOF Form PersonalDetails Block -->
+            <!--SOF Form AddressDetails Block -->
+            <div class="block" id="MetaData">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>META DATA</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal" id="clist">
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Role</label>
+                  <div class="col-md-6">
+                    <select id="metarole" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+                    </select>
+                  </div>
+                </div>
+
+                 <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Status</label>
+                  <div class="col-md-6">
+                    <select id="status" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>s
+                    </select>
+                     <button id="metaDataAdd" type="button" class="add">Add</button>
+                  
+                  </div>
+                </div>
+
+                 <table id="metaDataAddTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Role</th>
+                       <th>Status</th>
+                    </tr>
+                    <tr>
+                      <td><input id="checkbox" type="checkbox" class="row-check-all-input"/></td>
+                      
+                      <td>**</td>
+                      <td>**</td>
+                    </tr>        
+                  </table>
+                   <!--<button type="button" id="selectall" class="row-check-all-input" />selectall </button>-->
+                   <button type="button" class="delete" id="delete">Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+             <div class="block" id="Countries">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Countries</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal" id="clist">
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Country</label>
+                  <div class="col-md-6">
+                    <select id="country" name="example-chosen" class="select-chosen"  data-placeholder="Select">
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select> <button id="countryAdd" type="button" class="add">Add</button>
+                  </div>
+                </div>
+                 <table id="countryAddTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Country</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+             <div class="block" id="JobPositions">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Job Positions</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Job Position</label>
+                  <div class="col-md-6">
+                    <select id="jobposition" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select> <button id="jobpositionAdd" type="button">Add</button>
+                  </div>
+                </div>
+                 <table id="jobpositionTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Job Positions</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+            <div class="block" id="JobLocations">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Job Locations</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Job Locations</label>
+                  <div class="col-md-6">
+                    <select id="jobl" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select> <button id="joblAdd" type="button">Add</button>
+                  </div>
+                </div>
+                 <table id="joblTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Job Locations</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+            <div class="block" id="SkillSets">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Skill Sets</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Skill Set</label>
+                  <div class="col-md-6">
+                    <select id="skill" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select> <button id="skillAdd" type="button">Add</button>
+                  </div>
+                </div>
+                 <table id="skillTable"width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Skill Set</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+            <div class="block" id="CompensationPackage">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Compensation Package</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Compensation Package</label>
+                  <div class="col-md-6">
+                    <select id="compensation" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select> <button id="compensationAdd" type="button">Add</button>
+                  </div>
+                </div>
+                 <table id="compensationTable"width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Compensation Package</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+            <div class="block" id="PerksBenefits">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Perks/Benefits</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Perks/Benefits</label>
+                  <div class="col-md-6">
+                    <select id="pb" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select> <button id="pbAdd" type="button">Add</button>
+                  </div>
+                </div>
+                 <table id="pbTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Country</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+              <div class="block" id="WorkFlow">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Work Flow</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label">EVENTS</label>
+                  <div class="col-md-6">
+                    <select id="events" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label">Role</label>
+                  <div class="col-md-6">
+                    <select id="role" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select>
+                  </div>
+                </div>
+                         <div class="form-group">
+                  <label for="" class="col-md-3 control-label">Status</label>
+                  <div class="col-md-6">
+                    <select id="status" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select>
+                  </div>
+                </div>
+                  <div class="form-group">
+                  <div class="center-block" style="max-width:400px">
+                  <button type="button" id="WorkAdd"class="btn btn-success">ADD</button>
+                  <button type="button" class="btn btn-success">CANCEL</button>
+
+                  </div>
+                </div>
+                 <table id="workTable"width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Event</th>
+                      <th>Role</th>
+                      <th>Status</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                      <td>**</td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+             <div class="block" id="Communication">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Communication</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Communication Name </label>
+                  <div class="col-md-2">
+                    <input type="text" placeholder="Name" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">To</label>
+                  <div class="col-md-2">
+                    <input type="text" placeholder="To" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                  <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">CC</label>
+                  <div class="col-md-2">
+                    <input type="text" placeholder="CC" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                 <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Subject</label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="Subject" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                  <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Body</label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="Message" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                  <div class="form-group">
+                  <div class="center-block" style="max-width:400px">
+                  <button type="button" class="btn btn-success" id="communicationSave">SAVE</button>
+                  <button type="button" class="btn btn-success">CANCEL</button>
+                  </div>
+                </div>
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Communication Name</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                     
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>-</td>
+                     
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+
+                    
+                    <div class="block" id="Requirements">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Requirements</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                 <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Requirement Name</label>
+                  <div class="col-md-2">
+                    <input type="text" placeholder="Name" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                          <div class="form-group">
+                  <label for="" class="col-md-3 control-label">Job Position</label>
+                  <div class="col-md-6">
+                    <select id="jobp" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select>
+                  </div>
+                </div>
+                  <div class="form-group">
+                  <div class="center-block" style="max-width:400px">
+                  <button type="button" id="requirementAdd" class="btn btn-success">ADD</button>
+                  <button type="button" class="btn btn-success">CANCEL</button>
+                  </div>
+                </div>
+                 <table id="requirementTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Requirements</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+
+              <div class="block" id="Vendor">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Vendor</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                 <div class="form-group">
+                  <label for="example-text-input" class="col-md-3 control-label">Vendor</label>
+                  <div class="col-md-2">
+                    <input type="text" placeholder="" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                          <div class="form-group">
+                  <label for="" class="col-md-3 control-label">Requirements</label>
+                  <div class="col-md-6">
+                    <select id="venr" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+                    </select>
+                  </div>
+                </div>
+                  <div class="form-group">
+                  <div class="center-block" style="max-width:400px">
+                  <button type="button" id="venAdd"class="btn btn-success">ADD</button>
+                  <button type="button" class="btn btn-success">CANCEL</button>
+                  </div>
+                </div>
+                 <table id="venTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>-</th>
+                      <th>Vendor</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>**</td>
+                    </tr>        
+                  </table><button>Delete</button>
+              
+              </div>
+              <!-- Form Content -->
+            </div>
+            <!--EOF Form AddressDetails Block -->
+            <!--SOF Form Questionnaire Block -->
+            <!--<div class="block" id="Questionnaire">
+              <!-- Form Title -->
+              <!--<div class="block-title">
+                <h2>Questionnaire</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <!--<div class="form-horizontal form-bordered quesiotnnair-block">
+                <div class="form-group">
+                  <label class="col-md-9 control-label text-left"> <sup>*</sup>Are you currently active at work performing your normal duties?</label>
+                  <div class="col-sm-3">
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="CAWPND" id="CAWPND-Yes" value=" ">
+                      <label for="CAWPND-Yes"> Yes</label>
+                    </div>
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="CAWPND" id="CAWPND-No" value=" ">
+                      <label for="CAWPND-No">No </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-9 control-label text-left"> <sup>*</sup>Are you currently confined to a hospital, nursing home or psychiatric facility, , or currently receiving home health care/assisted living care or currently on parole or in the last five years been convicted of a felony or misdemeanor?</label>
+                  <div class="col-sm-3">
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="CCHN" id="CCHN-Yes" value=" ">
+                      <label for="CCHN-Yes"> Yes</label>
+                    </div>
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="CCHN" id="CCHN-No" value=" ">
+                      <label for="CCHN-No">No </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-9 control-label text-left"> <sup>*</sup>Have you ever been declined, postponed, or offered rated life or health insurance or been denied a reinstatement, reissue or renewal for life or health insurance? </label>
+                  <div class="col-sm-3">
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="DPORH" id="DPORH-Yes" value=" ">
+                      <label for="DPORH-Yes"> Yes</label>
+                    </div>
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="DPORH" id="DPORH-No" value=" ">
+                      <label for="DPORH-No">No </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-9 control-label text-left"> <sup>*</sup>Do you have any existing life insurance or annuity contracts in force or is any application for life insurance now pending?</label>
+                  <div class="col-sm-3">
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="ELIAC" id="ELIAC-Yes" value=" " checked>
+                      <label for="ELIAC-Yes"> Yes</label>
+                    </div>
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="ELIAC" id="ELIAC-No" value=" " >
+                      <label for="ELIAC-No">No </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <label for="example-text-input" class="col-md-9 control-label">Give the total amount in force </label>
+                      <div class="col-md-3">
+                        <input type="text" placeholder="" class="form-control" name="" id="example-text-input">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-9 control-label text-left"> <sup>*</sup>Will the coverage applied for replace any existing life or annuity coverage now in force? </label>
+                  <div class="col-sm-3">
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="CARE" id="CARE-Yes" value=" " checked>
+                      <label for="CARE-Yes"> Yes</label>
+                    </div>
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" name="CARE" id="CARE-No" value=" ">
+                      <label for="CARE-No">No </label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="col-md-12">
+                    <div class="table-responsive">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table table-striped table-bordered table-condensed table-vcenter" id="general-table">
+                        <tr>
+                          <th width="30%">Plan of Insurance</th>
+                          <th width="15%">Issue Ages</th>
+                          <th width="25%">Face Amount of Insurance</th>
+                          <th width="25%">Accidental-Death Benefit </th>
+                          <th>Rider</th>
+                        </tr>
+                        <tr>
+                          <td><select  data-placeholder="Select" name="" class="select-block">
+                                    
+                                    <option>Select</option>
+                                  </select></td>
+                          <td>18-50</td>
+                          <td><input type="text" id="example-text-input" name="" class="form-control" placeholder=""></td>
+                          <td><input type="text" id="example-text-input" name="" class="form-control" placeholder=""></td>
+                          <td><div class="checkbox checkbox-primary">
+                              <input type="checkbox" name="example-checkbox4" value="example-checkbox4" id="" class="styled">
+                              <label for="example-checkbox4">Rider</label>
+                            </div></td>
+                        </tr>
+                        <tr>
+                          <td><select  data-placeholder="Select" name="" class="select-block">
+                                   
+                                    <option>Select</option>
+                                  </select></td>
+                          <td>51-65</td>
+                          <td><input type="text" id="example-text-input" name="" class="form-control" placeholder=""></td>
+                          <td><input type="text" id="example-text-input" name="" class="form-control" placeholder=""></td>
+                          <td><div class="checkbox checkbox-primary">
+                              <input type="checkbox" name="example-checkbox4" value="example-checkbox4" id="" class="styled">
+                              <label for="example-checkbox4">Rider</label>
+                            </div></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+              <!-- Form Content -->
+            <!--</div>
+            <!--EOF Form Questionnaire Block -->
+            <!--SOF Form Payment Method Block -->
+            <div class="block" id="PaymentMethod">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Payment Method</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal ">
+                <!--<div class="block-sub-title"> <h5> Mailing Address</h5> </div>-->
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Billing Method</label>
+                  <div class="col-md-3">
+                    <div class="radio radio-primary">
+                      <input type="radio" name="BillingMethod" id="Weekly" class="styled">
+                      <label for="Weekly">Weekly</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" name="BillingMethod"  id="14-Day Biweekly" class="styled">
+                      <label for="14-Day Biweekly">14-Day Biweekly</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" name="BillingMethod"  id="28-Day Biweekly" class="styled">
+                      <label for="28-Day Biweekly">28-Day Biweekly</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="radio radio-primary">
+                      <input type="radio" name="BillingMethod" id="Semimonthly" class="styled">
+                      <label for="Semimonthly">Semimonthly</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" name="BillingMethod"  id="Monthly" class="styled">
+                      <label for="Monthly">Monthly</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" name="BillingMethod"  id="Quarterly" class="styled">
+                      <label for="Quarterly">Quarterly</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="radio radio-primary">
+                      <input type="radio" name="BillingMethod" id="Semiannual" class="styled">
+                      <label for="Semiannual">Semiannual</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" name="BillingMethod"  id="Annual" class="styled">
+                      <label for="Annual">Annual</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Payor <small>(if other than Owner)</small></label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Relationship to Owner and Insured</label>
+                  <div class="col-md-6">
+                    <select data-placeholder="Select" class="select-chosen" name="" id="">
+                  </option>
+                  <option>
+                  <!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                  <option>Brother</option>
+                  <option>Business</option>
+                  <option>Civil Union Husband (Quebec)</option>
+                  <option>Civil Union Spouse (Quebec)</option>
+                  <option>Civil Union Wife (Quebec)</option>
+                  <option>Commonlaw Husband</option>
+                  <option>Commonlaw Spouse</option>
+                  <option>Commonlaw Wife</option>
+                  <option>Daughter</option>
+                  <option>Father</option>
+                  <option>Fiance</option>
+                  <option>Friends</option>
+                  <option>Grandparent(s)</option>
+                  <option>Guardian</option>
+                  <option>Husband</option>
+                  <option>Insured's Company</option>
+                  <option>Mother</option>
+                  <option>Parent(s)</option>
+                  <option>Partner(s)</option>
+                  <option selected>Same Person(s)</option>
+                  <option>Sister</option>
+                  <option>Son</option>
+                  <option>Wife</option>
+                </select>
+                  </div>
+                </div>
+                <hr>
+                <div class="block-sub-title">
+                  <h5> Payor Address and Phone Number </h5>
+                </div>
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label">Street or Post Office Box</label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="" class="form-control" name="example-text-input" id="example-text-input"  maxlength="25">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label">Apt. No.</label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="" class="form-control" name="example-text-input" id="example-text-input" maxlength="25">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>City</label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="" class="form-control" name="example-text-input" id="example-text-input" maxlength="25">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>State</label>
+                  <div class="col-md-6">
+                    <select id="example-chosen" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>Zip Code</label>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="" class="form-control" name="example-text-input" id="example-text-input">
+                  </div>
+                </div>
+         
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>Telephone </label>
+                  <div class="col-md-6 form-inline-formate">
+                    <div class="col-sm-4 col-md-4">
+                      <input type="text" value="" id="" name="" class="form-control text-center" placeholder="" maxlength="10">
+                      <span class="help-block">Home </span> </div>
+                    <div class="col-sm-4 col-md-4">
+                      <input type="text" value="" id="" name="" class="form-control text-center" placeholder="" maxlength="10">
+                      <span class="help-block">Business </span> </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- Form Content -->
+            </div>
+            <!--EOF Form Payment Method Block -->
+            <!--SOF Form Primary beneficiary Method Block -->
+            <div class="block" id="Primarybeneficiary">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Primary beneficiary</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal">
+           
+              
+            
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 pull-right">
+                <div class="table-btn-group ">
+                  <div class="pull-right"> <a title="Add" data-target="#AddPrimaryBeneficiary" data-toggle="modal" class="btn btn-effect-ripple btn-default" href="javascript:void(0)"><i class="fa fa-plus" data-toggle="tooltip" data-placement="top" title="Add"></i></a><a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Delete"><i class="fa fa-pencil"></i></a><a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Delete"><i class="fa fa-trash-o"></i></a> </div>
+                </div>
+              </div>
+            </div>
+                <div class="table-responsive">
+                
+                
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>Full Name</th>
+                      <th>Relationship</th>
+                      <th>SSN</th>
+                      <th>Date of Birth</th>
+                      <th>%</th>
+                    </tr>
+                    <tr>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                     
+                    
+                  </table>
+                </div>
+               <br>
+                
+             <!--SOF model window 1 Beneficiary Tab ADD Primary Beneficiary-->
+            <div class="modal fade" id="AddPrimaryBeneficiary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="myModalLabel" class="modal-title">Add Primary Beneficiary<a href="#myModalLabel" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="popup-contnt">
+                      <div class="block-body block-body-sub">
+                      <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>Name</label>
+                  <div class="col-md-8 form-inline-formate">
+                    <div class="col-xs-5 col-md-4">
+                      <input type="text" maxlength="25" id="fname" name="fname" class="form-control" value="" placeholder="">
+                      <span class="help-block">Last</span> </div>
+                      <div class="col-xs-5 col-md-4">
+                      <input type="text" maxlength="25" id="lname" name="lname" class="form-control" value="" placeholder="">
+                      <span class="help-block">First</span> </div>
+                    <div class="col-xs-2 col-md-1">
+                      <input type="text" maxlength="1" id="iname" name="iname" class="form-control" value="" placeholder="">
+                      <span class="help-block">MI</span> </div>
+                    
+                  </div>
+                </div>
+                      <div class="form-group">
+                              <label for="example-text-input" class="col-lg-3 control-label"><sup>*</sup>Relationship</label>
+                              <div class="col-md-3">
+                                <select data-placeholder="Select" class="select-chosen" name="" id="">
+                  </option>
+                  <option>
+                  <!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                  <option>Brother</option>
+                  <option>Business</option>
+                  <option>Civil Union Husband (Quebec)</option>
+                  <option>Civil Union Spouse (Quebec)</option>
+                  <option>Civil Union Wife (Quebec)</option>
+                  <option>Commonlaw Husband</option>
+                  <option>Commonlaw Spouse</option>
+                  <option>Commonlaw Wife</option>
+                  <option>Daughter</option>
+                  <option>Father</option>
+                  <option>Fiance</option>
+                  <option>Friends</option>
+                  <option>Grandparent(s)</option>
+                  <option>Guardian</option>
+                  <option>Husband</option>
+                  <option>Insured's Company</option>
+                  <option>Mother</option>
+                  <option>Parent(s)</option>
+                  <option>Partner(s)</option>
+                  <option selected>Same Person(s)</option>
+                  <option>Sister</option>
+                  <option>Son</option>
+                  <option>Wife</option>
+                </select>
+                              </div>
+                            </div>  
+                      
+                        
+                      <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>SSN</label>
+                  <div class="col-md-3">
+                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div>  
+                <div class="form-group">
+                              <label for="" class="col-md-4 col-lg-3 control-label"><sup>*</sup>Date of Birth</label>
+                              <div class="col-sm-12 col-md-6 form-inline-formate">
+                              <div class="col-xs-2">
+                                  <input type="text" placeholder="MM" class="form-control text-center dob" name="MM" id="MM" value="" maxlength="2">
+                                </div>
+                                <div class="col-xs-2">
+                                  <input type="text" placeholder="DD" class="form-control text-center dob" name="DD" id="DD" value="" maxlength="2">
+                                </div>
+                                
+                                <div class="col-xs-2">
+                                  <input type="text" placeholder="YYYY" class="form-control text-center dob" name="YYYY" id="YYYY" value=""maxlength="4">
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>Percentage</label>
+                  <div class="col-md-1">
+                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="%">
+                  </div>
+                </div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-dismiss="modal">
+                    Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--EOF model window 1 Beneficiary Tab ADD Primary Beneficiary-->
+              </div>
+              <!-- Form Content -->
+            </div>
+            <!--EOF Form Primary beneficiary Method Block -->
+            <!--SOF Form Contingent beneficiary Method Block -->
+            <div class="block" id="Contingentbeneficiary">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Contingent beneficiary</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal">
+           
+              <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 pull-right">
+                <div class="table-btn-group ">
+                  <div class="pull-right"> <a title="Add" data-target="#AddContingentbeneficiary" data-toggle="modal" class="btn btn-effect-ripple btn-default" href="javascript:void(0)"><i class="fa fa-plus" data-toggle="tooltip" data-placement="top" title="Add"></i></a><a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Delete"><i class="fa fa-pencil"></i></a><a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Delete"><i class="fa fa-trash-o"></i></a> </div>
+                </div>
+              </div>
+            </div>
+                <div class="table-responsive">
+                
+                
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-vcenter">
+                    <tr>
+                      <th>Full Name</th>
+                      <th>Relationship</th>
+                      <th>SSN</th>
+                      <th>Date of Birth</th>
+                      <th>%</th>
+                    </tr>
+                    <tr>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                     
+                    
+                  </table>
+                </div>
+               <br>
+                
+            <!--SOF model window 1 Beneficiary Tab AddPrimaryBeneficiary-->
+            <div class="modal fade" id="AddContingentbeneficiary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="myModalLabel" class="modal-title">Add Contingent beneficiary<a href="#myModalLabel" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="popup-contnt">
+                      <div class="block-body block-body-sub">
+                      <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>Name</label>
+                  <div class="col-md-8 form-inline-formate">
+                    <div class="col-xs-5 col-md-4">
+                      <input type="text" maxlength="25" id="fname" name="fname" class="form-control" value="" placeholder="">
+                      <span class="help-block">Last</span> </div>
+                      <div class="col-xs-5 col-md-4">
+                      <input type="text" maxlength="25" id="lname" name="lname" class="form-control" value="" placeholder="">
+                      <span class="help-block">First</span> </div>
+                    <div class="col-xs-2 col-md-1">
+                      <input type="text" maxlength="1" id="iname" name="iname" class="form-control" value="" placeholder="">
+                      <span class="help-block">MI</span> </div>
+                    
+                  </div>
+                </div>
+                      <div class="form-group">
+                              <label for="example-text-input" class="col-lg-3 control-label"><sup>*</sup>Relationship</label>
+                              <div class="col-md-3">
+                                <select data-placeholder="Select" class="select-chosen" name="" id="">
+                  </option>
+                  <option>
+                  <!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                  <option>Brother</option>
+                  <option>Business</option>
+                  <option>Civil Union Husband (Quebec)</option>
+                  <option>Civil Union Spouse (Quebec)</option>
+                  <option>Civil Union Wife (Quebec)</option>
+                  <option>Commonlaw Husband</option>
+                  <option>Commonlaw Spouse</option>
+                  <option>Commonlaw Wife</option>
+                  <option>Daughter</option>
+                  <option>Father</option>
+                  <option>Fiance</option>
+                  <option>Friends</option>
+                  <option>Grandparent(s)</option>
+                  <option>Guardian</option>
+                  <option>Husband</option>
+                  <option>Insured's Company</option>
+                  <option>Mother</option>
+                  <option>Parent(s)</option>
+                  <option>Partner(s)</option>
+                  <option selected>Same Person(s)</option>
+                  <option>Sister</option>
+                  <option>Son</option>
+                  <option>Wife</option>
+                </select>
+                              </div>
+                            </div>  
+                      
+                        
+                      <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>SSN</label>
+                  <div class="col-md-3">
+                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div>  
+                <div class="form-group">
+                              <label for="" class="col-md-4 col-lg-3 control-label"><sup>*</sup>Date of Birth</label>
+                              <div class="col-sm-12 col-md-6 form-inline-formate">
+                              <div class="col-xs-2">
+                                  <input type="text" placeholder="MM" class="form-control text-center dob" name="MM" id="MM" value="" maxlength="2">
+                                </div>
+                                <div class="col-xs-2">
+                                  <input type="text" placeholder="DD" class="form-control text-center dob" name="DD" id="DD" value="" maxlength="2">
+                                </div>
+                                
+                                <div class="col-xs-2">
+                                  <input type="text" placeholder="YYYY" class="form-control text-center dob" name="YYYY" id="YYYY" value=""maxlength="4">
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>Percentage</label>
+                  <div class="col-md-1">
+                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="%">
+                  </div>
+                </div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-primary"data-dismiss="modal" data-dismiss="modal">
+                    Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--EOF model window 1 Beneficiary Tab AddPrimaryBeneficiary-->
+              </div>
+              <!-- Form Content -->
+            </div>
+            <!--EOF Form Contingent beneficiary Method Block -->
+            <!--SOF Form Physician details  Method Block -->
+            <div class="block" id="Physiciandetails">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Part-B</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Please indicate your personal physician.</strong></label>
+                  <label class="col-md-3 control-label" for="">Name of Physician</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>City</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>State</label>
+                  <div class="col-md-6">
+                    <select id="example-chosen" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Please indicate your smoking status</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Daily" name="PISS">
+                      <label for="Daily">Daily</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Only a few times a week" name="PISS">
+                      <label for="Only a few times a week">Only a few times a week</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Occasionally" name="PISS">
+                      <label for="Occasionally">Occasionally (e.g. socially)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="quit in the past year" name="PISS">
+                      <label for="quit in the past year">I quit in the past year</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Vape" name="PISS">
+                      <label for="Vape">I "Vape" / use e-cigarettes</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="I quit more than a year ago" name="PISS">
+                      <label for="I quit more than a year ago">I quit more than a year ago</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="I have never smoked" name="PISS">
+                      <label for="I have never smoked">I have never smoked</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>All driving violations are recorded in the Motor Vehicle National database – have you been charged with any of the following?</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="DUIOUIDWI" name="DVRMV">
+                      <label for="DUIOUIDWI">DUI, OUI, DWI</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="3 or more moving" name="DVRMV">
+                      <label for="3 or more moving">3 or more moving violations in the past 3 years </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="License is currently revoked " name="DVRMV">
+                      <label for="License is currently revoked ">License is currently revoked or suspended</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="None of the above" name="DVRMV">
+                      <label for="None of the above">None of the above</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>The ability to take part in exciting sporting activities has become more popular, Please indicate any/all of the following you participate in:</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Auto Racing" name="ESAP">
+                      <label for="Auto Racing">Auto Racing</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Private Pilot" name="ESAP">
+                      <label for="Private Pilot">Private Pilot</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Mountain Climbing" name="ESAP">
+                      <label for="Mountain Climbing">Mountain Climbing</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Scuba Diving" name="ESAP">
+                      <label for="Scuba Diving">Scuba Diving</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Motorcycle Racing" name="ESAP">
+                      <label for="Motorcycle Racing">Motorcycle Racing</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Extreme Sports" name="ESAP">
+                      <label for="Extreme Sports">Extreme Sports (bungee or base jumping, heli-skiing, etc.)</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Hang Gliding" name="ESAP">
+                      <label for="Hang Gliding">Hang Gliding</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Ballooning" name="ESAP">
+                      <label for="Ballooning">Ballooning</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Parachuting/Skydiving" name="ESAP">
+                      <label for="Parachuting/Skydiving">Parachuting/Skydiving</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="I do not take" name="ESAP">
+                      <label for="I do not take">No, I do not take part in any of these</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>13 million Americans have or have had a history of some type of cancer diagnosed. Have you been diagnosed with any of the following:</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Bladder" name="cancerDia">
+                      <label for="Bladder">Bladder</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Breast" name="cancerDia">
+                      <label for="Breast">Breast</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Colon" name="cancerDia">
+                      <label for="Colon">Colon</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Kidney" name="cancerDia">
+                      <label for="Kidney">Kidney</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Leukemia" name="cancerDia">
+                      <label for="Leukemia">Leukemia</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Liver" name="cancerDia">
+                      <label for="Liver">Liver</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Lung " name="cancerDia">
+                      <label for="Lung ">Lung </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Lymphoma" name="cancerDia">
+                      <label for="Lymphoma">Lymphoma</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Pancreatic" name="cancerDia">
+                      <label for="Pancreatic">Pancreatic</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Prostate" name="cancerDia">
+                      <label for="Prostate">Prostate</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Skin" name="cancerDia">
+                      <label for="Skin">Skin (do not include Basal or Squamous Cell)</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Other cancer" name="cancerDia">
+                      <label for="Other cancer">Other cancer (please specify)</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="No cancer diagnosis.  " name="cancerDia">
+                      <label for="No cancer diagnosis.  ">No cancer diagnosis. </label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Has a member of the medical profession ever diagnosed you with any blood disorder, immune system disorder?</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Blood disorder" name="ProDia">
+                      <label for="Blood disorder">Blood disorder</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Immune system disorder" name="ProDia">
+                      <label for="Immune system disorder">Immune system disorder</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id=" blood disorder  " name="ProDia">
+                      <label for=" blood disorder  ">No diagnosis of a blood disorder or immune system disorder</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Nearly 1/3 of Americans are living with or have been diagnosed with some form of cardiovascular disease. Have you been diagnosed with:</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Heart Attack " name="AmeriLive">
+                      <label for="Heart Attack">Heart Attack </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Chest Pains" name="AmeriLive">
+                      <label for="Chest Pains">Chest Pains</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Irregular Heart Beat" name="AmeriLive">
+                      <label for="Irregular Heart Beat">Irregular Heart Beat</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id=" Arrhythmia" name="AmeriLive">
+                      <label for="Arrhythmia">Arrhythmia</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id=" Open Heart Surgery " name="AmeriLive">
+                      <label for="Open Heart Surgery ">Open Heart Surgery </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Stent Placement" name="AmeriLive">
+                      <label for="Stent Placement">Stent Placement</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="No cardiovascular disease diagnosed" name="AmeriLive">
+                      <label for="No cardiovascular disease diagnosed">No cardiovascular disease diagnosed</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Some people have problems with blockage or bleeding in the brain. Please note if you have you ever been diagnosed with or treated for a:</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="StrokeCVA" name="BloBlee">
+                      <label for="StrokeCVA">Stroke (CVA) </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Transient ischemic" name="BloBlee">
+                      <label for="Transient ischemic">Transient ischemic attack (TIA)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="No CVA" name="BloBlee">
+                      <label for="No CVA">No CVA or TIA diagnosed</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Diabetics and pre-diabetics manage their disease by using one of the following methods. Please identify which type of diabetes you have been diagnosed with:</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="DiabetesIns" name="preDia">
+                      <label for="DiabetesIns">Diabetes, insulin controlled </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="DiabetesDiet" name="preDia">
+                      <label for="DiabetesDiet">Diabetes, diet controlled</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="DiabetesOral" name="preDia">
+                      <label for="DiabetesOral">Diabetes, oral medication controlled</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="DiabetesInsOral" name="preDia">
+                      <label for="DiabetesInsOral">Diabetes, insulin and oral medication controlled</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="notbeendia" name="preDia">
+                      <label for="notbeendia"> I have not been diagnosed with diabetes. </label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Have you ever been treated or are currently under treatment by a medical professional for  depression, anxiety, mental disorder, suicide attempt(s), drug use or treatment or alcohol abuse or treatment?</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Depression" name="underTre">
+                      <label for="Depression">Depression </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Anxiety" name="underTre">
+                      <label for="Anxiety">Anxiety</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Mental disorder" name="underTre">
+                      <label for="Mental disorder">Mental disorder</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Suicide attempt" name="underTre">
+                      <label for="Suicide attempt">Suicide attempt(s)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Drug use not prescribed" name="underTre">
+                      <label for="Drug use not prescribed">Drug use not prescribed by a medical professional</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Drug treatment" name="underTre">
+                      <label for="Drug treatment"> Drug treatment</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Alcohol abuse" name="underTre">
+                      <label for="Alcohol abuse">Alcohol abuse as diagnosed by a medical professional</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Alcohol treatment" name="underTre">
+                      <label for="Alcohol treatment">Alcohol treatment</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="I have never been diagnosed with any of these" name="underTre">
+                      <label for="I have never been diagnosed with any of these"> I have never been diagnosed with any of these</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Have you ever been diagnosed with or treated by a licensed member of the medical profession for any sexually transmitted diseases, Acquired Immune Deficiency Syndrome (AIDS), AIDS Related Complex (ARC) or tested positive for Human Immunodeficiency Virus (HIV)? </strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" class="styled" id="AIDSYes" name="AIDS">
+                      <label for="AIDSYes">Yes </label>
+                    </div>
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" class="styled" id="AIDSNo" name="AIDS">
+                      <label for="AIDSNo">No</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Have you ever have been diagnosed by a medical professional with cirrhosis, hepatitis, Crohn's disease or ulcerative colitis?</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Cirrhosis" name="DiamePro">
+                      <label for="Cirrhosis">Cirrhosis </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Hepatitis" name="DiamePro">
+                      <label for="Hepatitis">Hepatitis</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Crohn disease" name="DiamePro">
+                      <label for="Crohn disease">Crohn's disease</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Ulcerative colitis" name="DiamePro">
+                      <label for="Ulcerative colitis">Ulcerative colitis </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="I have never been diagnosed with any of these1" name="DiamePro">
+                      <label for="I have never been diagnosed with any of these1">I have never been diagnosed with any of these</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Have you in the past three years been treated by a medical professional for  more than one episode of pneumonia or influenza (the flu)?</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" class="styled" id="influenzaYes" name="influenza">
+                      <label for="influenzaYes">Yes </label>
+                    </div>
+                    <div class="radio radio-inline radio-primary">
+                      <input type="radio" class="styled" id="influenzaNo" name="influenza">
+                      <label for="influenzaNo">No</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="col-md-12 control-label text-left" for=""><sup>*</sup><strong>Most people have ailments in their family history. Please identify if any of your siblings or parents were diagnosed with or died prior to age 60 from:</strong></label>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Breast cancer" name="ailments">
+                      <label for="Breast cancer">Breast cancer </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Cardiovascular disease" name="ailments">
+                      <label for="Cardiovascular disease">Cardiovascular disease</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Colorectal cancer" name="ailments">
+                      <label for="Colorectal cancer">Colorectal cancer</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Hodgkin disease" name="ailments">
+                      <label for="Hodgkin disease">Hodgkin's disease </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Lymphoma" name="ailments">
+                      <label for="Lymphoma">Lymphoma</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Melanoma" name="ailments">
+                      <label for="Melanoma">Melanoma</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Ovarian cancer" name="ailments">
+                      <label for="Ovarian cancer">Ovarian cancer </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="Testicular cancer" name="ailments">
+                      <label for="Testicular cancer">Testicular cancer</label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <input type="radio" class="styled" id="None of these" name="ailments">
+                      <label for="None of these">None of these</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Form Content -->
+            </div>
+            <!--EOF Form Physician details  Method Block -->
+            
+            <!--SOF Form E-Signature Method Block -->
+            <div class="block" id="ESignature">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>E-Signature</h2>
+              </div>
+              <!-- END Form Title -->
+              <!-- Form Content -->
+              <div class="form-horizontal">
+                <div class="form-group">
+                  <label for="" class="col-md-3  control-label"><sup>*</sup>Date</label>
+                  <div class="col-sm-12 col-md-6 form-inline-formate">
+                              <div class="col-xs-2">
+                                  <input type="text" placeholder="MM" class="form-control text-center dob" name="MM" id="MM" value="" maxlength="2">
+                                </div>
+                                <div class="col-xs-2">
+                                  <input type="text" placeholder="DD" class="form-control text-center dob" name="DD" id="DD" value="" maxlength="2">
+                                </div>
+                                
+                                <div class="col-xs-2">
+                                  <input type="text" placeholder="YYYY" class="form-control text-center dob" name="YYYY" id="YYYY" value=""maxlength="4">
+                                </div>
+                              </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for=""><sup>*</sup>City</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="" class="col-md-3 control-label"><sup>*</sup>State</label>
+                  <div class="col-md-6">
+                    <select id="example-chosen" name="example-chosen" class="select-chosen"  data-placeholder="Select"  >
+    <option value="X"> </option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div><hr>
+
+			<div class="row"> <div class="col-md-6">	<div class="form-group">
+                  <label class="col-md-6 control-label" for=""><sup>*</sup>Proposed Insured</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div></div>
+                
+               <div class="col-md-6"> <div class="form-group">
+                  <label class="col-md-5 control-label" for=""><sup>*</sup>Print or Type Name</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div></div></div>
+                
+                <div class="row"> <div class="col-md-6">	<div class="form-group">
+                  <label class="col-md-6 control-label" for=""><sup>*</sup>Owner <small>(if other than Proposed Insured)</small> 	</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div></div>
+                
+               <div class="col-md-6"> <div class="form-group">
+                  <label class="col-md-5 control-label" for=""><sup>*</sup>Print or Type Name</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div></div></div>
+                
+                
+                <div class="row"> <div class="col-md-6">	<div class="form-group">
+                  <label class="col-md-6 control-label" for=""><sup>*</sup>Registered Rep/Producer/Agent 	</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div></div>
+                
+               <div class="col-md-6"> <div class="form-group">
+                  <label class="col-md-5 control-label" for=""><sup>*</sup>Other Required Signature</label>
+                  <div class="col-md-6">
+                    <input type="text" maxlength="25" id="example-text-input" name="example-text-input" class="form-control" placeholder="">
+                  </div>
+                </div></div></div>
+
+              </div>
+              <!-- Form Content -->
+            </div>
+            <!--EOF Form E-Signature Method Block -->
+            
+            <div class="form-group form-actions clearfix">
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn  btn-lg btn-primary"> Submit </button>
+                  <button type="submit" class="btn  btn-lg btn-default"> Cancel </button>
+
+                </div>
+              </div>
+
+          </div>
+          
+          
+        <!-- END Form Components Row -->
+        
+        
+        <div class="col-md-2">
+      <div id="help" class="block">
+              <!-- Form Title -->
+              <div class="block-title">
+                <h2>Help</h2>
+              </div>
+              <div class="block-section">
+              Help Content Links...</div>
+        </div></div>
+      </div>
+      <!-- END Page Content -->
+    
+          
+    </div>
+    <!-- END Main Container -->
+  </div>
+  <!-- END Page Container -->
+</div>
+<!-- END Page Wrapper -->
+<!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-2.1.1.min.js"%3E%3C/script%3E'));</script>
+<!-- Bootstrap.js, Jquery plugins and Custom JS code -->
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/app.js"></script>
+<!-- ckeditor.js, load it only in the page you would like to use CKEditor (it's a heavy plugin to include it with the others!) -->
+<script src="js/plugins/ckeditor/ckeditor.js"></script>
+<!-- Load and execute javascript code used only in this page -->
+<script src="js/pages/formsComponents.js"></script>
+<script>$(function(){ FormsComponents.init(); });</script>
+</body>
+</html><script src="js/jquery.nav.js"></script>
+<script src="js/indexjs/index.js"></script>
+<script>$(function(){ FormsComponents.init(); });</script>
+</body>
+</html><script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 80
+        }, 1000);
+        return false;
+      }
+    }
+  });
+  
+  $('#sidebar-scroll').onePageNav({
+	  currentClass: 'active',
+	  changeHash: false,
+	  scrollSpeed: 750,
+	  scrollChange: function($currentListItem) {
+	  console.log($currentListItem.find('a').attr('href'));
+        if($currentListItem.find('a').attr('href') ==  "#Primarybeneficiary" || $currentListItem.find('a').attr('href') ==  "#Contingentbeneficiary"){
+			$('a[href=#Beneficiary]').addClass('open');
+		}
+	  }
+   });
+});
+</script>
+<script>
+$("#clickme").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#wrap2").offset().top
+    }, 2000);
+    return false;
+});
+</script>
